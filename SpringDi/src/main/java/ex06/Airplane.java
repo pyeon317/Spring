@@ -7,6 +7,8 @@ public class Airplane {
 
 	//batter2 주입해주세요
 
+	@Autowired
+	@Qualifier("battery2")
 	private IBattery battery;
 	
 	//기본생성자

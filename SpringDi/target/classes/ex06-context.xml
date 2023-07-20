@@ -13,7 +13,7 @@
 	
 	<bean class="ex06.Car"/>
 	
-	<bean class="ex06.Airplane"><constructor-arg ref="battery2"/></bean>
+	<bean class="ex06.Airplane"/>
 	
 	
 </beans>

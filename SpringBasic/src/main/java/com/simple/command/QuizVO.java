@@ -1,7 +1,6 @@
 package com.simple.command;
 
 public class QuizVO {
-	
 	private String id;
 	private String pw;
 	private String name;

@@ -31,7 +31,7 @@ public class QuizController {
 	public void quiz02() {}
 	
 	@RequestMapping(value = "/join", method=RequestMethod.POST)
-	public String join(QuizVO vo) {
+	public String join(com.simple.command.QuizVO vo) {
 		System.out.println(vo);
 		
 		return "/quiz/quiz02_ok";

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+
+ <mapper namespace="com.simple.mapper.BoardMapper">
+ 	
+ 	<!-- insert -->
+ 	<!-- 매개변수의 전달 parameterType -->
+ 	<insert id="boardRegist" parameterType="com.simple.command.BoardVO">
+ 		insert into score(name, kor, eng) values( #{name}, #{kor}, #{eng} )
+ 	</insert>
+ 	
+ 	<!-- select문의 맵핑할 vo의 풀경로가 들어갑니다. -->
+ 	<select id="getList" resultType="com.simple.command.BoardVO">
+ 		select * from score order by num desc
+ 	</select>
+ 	
+ 	<!-- 매개변수가 1개 일때는 ?는 변수명을 따라갑니다 -->
+ 	<delete id="boardDelete" parameterType="int">
+ 		delete from score where num = #{index}
+ 	</delete>
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ </mapper>

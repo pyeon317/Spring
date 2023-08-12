@@ -1,9 +1,0 @@
-package ex02;
-
-public class Chef {
-
-	private void cooking() {
-		System.out.println("cooking");
-
-	}
-}

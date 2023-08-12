@@ -12,7 +12,7 @@
   		value = 실제 파일의 경로
   	 -->	
   	 
-  	 <!-- 템플릿은 여러 모형이 있을 수 있고, 단, *결로 맵핑보다 위에 있으면 됩니다. -->
+  	 <!-- 템플릿은 여러 모형이 있을 수 있고, 단, *경로 맵핑보다 위에 있으면 됩니다. -->
   	 
   	<definition name="baseDefault" template="/WEB-INF/tiles/templateDefault.jsp">
   		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"/>
